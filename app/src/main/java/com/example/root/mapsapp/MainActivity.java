@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (googlePalyserviceavilable()) {
             Toast.makeText(this, "Perfect!!!!....", Toast.LENGTH_LONG).show();
             setContentView(R.layout.activity_main);
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            setSupportActionBar(toolbar);
             initMap();
         } else {
 
